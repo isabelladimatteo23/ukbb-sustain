@@ -1,0 +1,50 @@
+paths:
+  fmriprep_dir: "/scratch/cbrain01/tmp_isabella"
+  data_dir: "data"
+  outputs: "outputs"
+
+fmri:
+  tr: 2.0
+  tr_drop: 4
+  high_pass: 0.009
+  low_pass: 0.08
+  confound_variables:
+    - trans_x
+    - trans_y
+    - trans_z
+    - rot_x
+    - rot_y
+    - rot_z
+    - global_signal
+    - white_matter
+    - csf
+  use_derivatives: true
+
+batch:
+  batch_size: 50
+
+fc_cleaning:
+  exclude_regions: [102, 103, 185, 186, 187, 113, 197]
+
+sustain:
+  n_startpoints: 25
+  n_s_max: 4
+  n_iterations_mcmc: 1000000
+  cv_n_folds: 3
+  cv_random_state: 42
+  n_s_selected: 2
+
+biomarkers:
+  - left_HC_participation
+  - right_HC_participation
+  - pal
+  - freq_unenthusiasm_disinterest
+  - freq_social_visits
+
+covariates:
+  - age
+  - sex
+  - eTIV
+
+random_state: 42
+verbose: true

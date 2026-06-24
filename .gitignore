@@ -1,0 +1,7 @@
+outputs/
+data/
+logs/
+__pycache__/
+*.pyc
+nilearn_cache/
+.DS_Store
