@@ -1,6 +1,6 @@
 # UKBB Functional Connectivity & SuStaIn Pipeline
 
-A pipeline for computing functional connectivity and disease progression modeling.
+A pipeline for computing functional connectivity, hippocampal participation coefficients, and sustain disease progression modeling.
 
 ## Setup
 
