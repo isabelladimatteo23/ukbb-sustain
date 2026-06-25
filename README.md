@@ -12,7 +12,7 @@ A pipeline for computing functional connectivity, hippocampal participation coef
 ## Scripts
 
 - `01_fc_batch.py` - Extract functional connectivity
-- `02_clean_fc_matrices.py` - Clean FC and compute participation coefficient  
+- `02_hippocampal_connectivity.py` - Clean FC and compute participation coefficient  
 - `03_sustain_cv.py` - Run SuStaIn modeling
 
 ## Data Requirements
